@@ -46,7 +46,7 @@ nav ul li a:hover, nav ul li button:hover {
     border-radius: 3px;
 }
 
-#home, #about, #projects, #contact {
+#Kinan, #Omar, #Osama, #Hamad, #Khaldoun {
     background-color: lightcyan;
     color: darkslategray;
     padding: 20px;
@@ -107,10 +107,11 @@ body.dark-theme nav ul li a:hover{
     color: white;
 }
 
-body.dark-theme #home, 
-body.dark-theme #about, 
-body.dark-theme #projects, 
-body.dark-theme #contact {
+body.dark-theme #Kinan, 
+body.dark-theme #Omar, 
+body.dark-theme #Osama, 
+body.dark-theme #Hamad,
+body.dark-theme #Khaldoun {
     background-color: darkslategray;
     color: lightgrey;
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
@@ -120,6 +121,6 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-header, #home, #about, #projects, #contact, footer {
+header, #Kinan, #Omar, #Osama, #Hamad, #Khaldoun, footer {
     transition: background-color 0.3s, color 0.3s;
 }
