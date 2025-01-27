@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">    
+<body>
+
+    <header>
+        <h1>Kinan Khaskieh</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle">Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>I am a computer science major, and this web page will illustrate my skills, projects, and hobbies.</p>
+    </div>
+
+    <div id="about">
+        <h2>About Me</h2>
+        <p>My name is Kinan Khaskieh, I am studying Computer Science with a standing of Senior 1. During my studies at AUS my favorite topics to study are computer vision and cyber security.  To cool my head of studying I enjoy playing chess in my short breaks and game development during long breaks. I have a passion for redesigning retro games to add my own touch and modifications, or to get the game to work on my own device. </p>
+        
+        <div id="collapsible">
+            <p>Here is a brief overview of my strengths:</p>
+            <ol>
+                <li>Neural Networks</li>
+                <li>Image Analysis</li>
+                <li>Data Processing</li>
+                <li>Web Design</li>
+                <li>Optimization</li>
+            </ol>
+            <p>Programming Languages:</p>
+            <ul>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Swift</li>
+                <li>C++, C#, C</li>
+                <li>Assembly</li>
+                <li>JavaScript, HTML, CSS</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="projects">
+        <h2>My Projects!</h2>
+        <p>Aside of projects and submissions to my university, here is a brief of my field of interest.</p>
+        
+        <h3>Game Development!</h3>
+        <ul>
+            <li>
+                Game development has been one of my passions since childhood. I have developed many games; some of them you can find on my <a href="https://github.com/KinanKh">GitHub</a>.
+            </li>
+        </ul>
+
+        <h3>Artificial Intelligence</h3>
+        <ul>
+            <li>
+                Additionally, I am particularly interested in neural networks and image analysis. Currently in progress: Converting text in images into text copied to your clipboard! Stay tuned!
+            </li>
+        </ul>
+    </div>
+    
+
+    <div id="contact">
+        <h2>Contact Me</h2>
+
+        <a href="https://github.com/KinanKh" 
+           title="Redirects to my GitHub profile" >
+            GitHub
+        </a>
+
+        <a href="https://www.instagram.com/kinan_khaskieh/"
+            title="Redirects to my Instagram page">
+            Instagram</a>
+
+        <a href="mailto:b00087934@aus.edu"
+            title="Send me an Email!">
+            Email</a>        
+        
+        <a href="+971544550250"
+            onclick="copyNumber('+971544550250')"
+            title="Copy my phone number!">Phone Call</a>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

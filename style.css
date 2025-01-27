@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: darkslategray;
+    background-color: lightyellow;
+    padding: 20px;
+}
+
+header {
+    background-color: steelblue;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li button{
+    border: none;
+    background-color: steelblue;
+
+}
+
+nav ul li a, nav ul li button {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover, nav ul li button:hover {
+    background-color: white;
+    color: steelblue;
+    border-radius: 3px;
+}
+
+#home, #about, #projects, #contact {
+    background-color: lightcyan;
+    color: darkslategray;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact a {
+    color: darkcyan;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 20px;
+    background-color: white;
+    border-radius: 5px;
+    transition: background-color 1s, color 0.3s;
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact a:hover {
+    background-color: darkcyan;
+    color: white;
+    border-radius: 5px;
+}
+
+/*  Dark Theme Button CSS  */
+/*  This section is basically the same CSS above but with a changed color for darker scales...  */
+
+
+body.dark-theme {
+    background-color: darkseagreen;
+    color: lightgrey;
+}
+
+body.dark-theme header {
+    background-color: dimgray;
+    color: white;
+}
+
+body.dark-theme header button {
+    background-color: dimgray;
+    color: white;
+}
+
+body.dark-theme nav ul li button:hover{
+    background-color: darkgray;
+    color: white;
+}
+
+body.dark-theme nav ul li a:hover{
+    background-color: darkgray;
+    color: white;
+}
+
+body.dark-theme #home, 
+body.dark-theme #about, 
+body.dark-theme #projects, 
+body.dark-theme #contact {
+    background-color: darkslategray;
+    color: lightgrey;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header, #home, #about, #projects, #contact, footer {
+    transition: background-color 0.3s, color 0.3s;
+}
