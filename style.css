@@ -130,18 +130,18 @@ nav ul li button:hover {
 }
 
 /* Contact section */
-#contact {
+.contact {
     text-align: center;
     padding: 20px;
     margin-top: 30px;
 }
 
-#contact h2 {
+.contact h2 {
     color: steelblue;
     margin-bottom: 20px;
 }
 
-#contact a {
+.contact a {
     color: steelblue;
     text-decoration: none;
     font-weight: bold;
@@ -154,7 +154,7 @@ nav ul li button:hover {
     display: inline-block;
 }
 
-#contact a:hover {
+.contact a:hover {
     background-color: steelblue;
     color: white;
 }
@@ -182,19 +182,19 @@ body.dark-theme .collapsible {
     background-color: #2c3e50;
 }
 
-body.dark-theme #contact a {
+body.dark-theme .contact a {
     background-color: #34495e;
     color: #ecf0f1;
     border-color: #ecf0f1;
 }
 
-body.dark-theme #contact a:hover {
+body.dark-theme .contact a:hover {
     background-color: #ecf0f1;
     color: #34495e;
 }
 
 /* Transitions */
-body, header, nav, section, #contact a {
+body, header, nav, section, .contact a {
     transition: all 0.3s ease;
 }
 
@@ -206,7 +206,7 @@ body, header, nav, section, #contact a {
         gap: 10px;
     }
 
-    #contact a {
+    .contact a {
         display: block;
         margin: 10px auto;
         width: 200px;
