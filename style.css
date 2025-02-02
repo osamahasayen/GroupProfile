@@ -6,6 +6,9 @@ body {
     background-color: #f5f6fa;
     padding: 20px;
     margin: 0;
+}
+
+ul {
     list-style-type: square;
 }
 
