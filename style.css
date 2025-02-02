@@ -1,11 +1,14 @@
+/* Base styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: darkslategray;
-    background-color: lightyellow;
+    background-color: #f5f6fa;
     padding: 20px;
+    margin: 0;
 }
 
+/* Header styles */
 header {
     background-color: steelblue;
     color: white;
@@ -13,98 +16,153 @@ header {
     text-align: center;
     margin-bottom: 20px;
     border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     margin-bottom: 10px;
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding: 0;
 }
 
-nav ul li button{
+nav ul li button {
     border: none;
-    background-color: steelblue;
-
+    background-color: transparent;
+    cursor: pointer;
 }
 
-nav ul li a, nav ul li button {
+nav ul li a, 
+nav ul li button {
     color: white;
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: all 0.3s ease;
 }
 
-nav ul li a:hover, nav ul li button:hover {
+nav ul li a:hover, 
+nav ul li button:hover {
     background-color: white;
     color: steelblue;
     border-radius: 3px;
 }
 
+/* Content sections */
 #Kinan, #Omar, #Osama, #Hamad, #Khaldoun {
-    background-color: lightcyan;
+    background-color: white;
     color: darkslategray;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Section content structure */
+.section-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Profile introduction */
+.profile-intro {
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+/* Collapsible content */
+#collapsible {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+#collapsible p {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: steelblue;
+}
+
+#collapsible ul,
+#collapsible ol {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+#collapsible li {
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+
+/* Projects section */
+.projects-section {
+    margin-top: 30px;
+}
+
+.projects-section h2 {
+    color: steelblue;
+    margin-bottom: 20px;
+}
+
+.projects-section h3 {
+    color: darkslategray;
+    margin: 20px 0 10px 0;
+}
+
+.projects-section ul {
+    padding-left: 20px;
+}
+
+.projects-section li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Contact section */
+#contact {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+#contact h2 {
+    color: steelblue;
+    margin-bottom: 20px;
+}
+
 #contact a {
-    color: darkcyan;
+    color: steelblue;
     text-decoration: none;
     font-weight: bold;
-    padding: 8px 20px;
+    padding: 10px 20px;
     background-color: white;
+    border: 2px solid steelblue;
     border-radius: 5px;
-    transition: background-color 1s, color 0.3s;
-    margin-right: 10px;
+    transition: all 0.3s ease;
+    margin: 0 10px;
     display: inline-block;
-    margin-bottom: 10px;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #contact a:hover {
-    background-color: darkcyan;
+    background-color: steelblue;
     color: white;
-    border-radius: 5px;
 }
 
-/*  Dark Theme Button CSS  */
-/*  This section is basically the same CSS above but with a changed color for darker scales...  */
-
-
+/* Dark theme */
 body.dark-theme {
-    background-color: darkseagreen;
-    color: lightgrey;
+    background-color: #2c3e50;
+    color: #ecf0f1;
 }
 
 body.dark-theme header {
-    background-color: dimgray;
-    color: white;
-}
-
-body.dark-theme header button {
-    background-color: dimgray;
-    color: white;
-}
-
-body.dark-theme nav ul li button:hover{
-    background-color: darkgray;
-    color: white;
-}
-
-body.dark-theme nav ul li a:hover{
-    background-color: darkgray;
-    color: white;
+    background-color: #34495e;
 }
 
 body.dark-theme #Kinan, 
@@ -112,15 +170,41 @@ body.dark-theme #Omar,
 body.dark-theme #Osama, 
 body.dark-theme #Hamad,
 body.dark-theme #Khaldoun {
-    background-color: darkslategray;
-    color: lightgrey;
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    background-color: #34495e;
+    color: #ecf0f1;
 }
 
-body {
-    transition: background-color 0.3s, color 0.3s;
+body.dark-theme #collapsible {
+    background-color: #2c3e50;
 }
 
-header, #Kinan, #Omar, #Osama, #Hamad, #Khaldoun, footer {
-    transition: background-color 0.3s, color 0.3s;
+body.dark-theme #contact a {
+    background-color: #34495e;
+    color: #ecf0f1;
+    border-color: #ecf0f1;
+}
+
+body.dark-theme #contact a:hover {
+    background-color: #ecf0f1;
+    color: #34495e;
+}
+
+/* Transitions */
+body, header, nav, section, #contact a {
+    transition: all 0.3s ease;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #contact a {
+        display: block;
+        margin: 10px auto;
+        width: 200px;
+    }
 }
